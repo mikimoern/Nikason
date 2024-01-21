@@ -1,0 +1,57 @@
+.quality {
+  margin: 100px 140px;
+  border: 7px solid var(--green);
+
+  @include table() {
+    margin: 80px 100px;
+  }
+
+  @include mobile() {
+    margin: 50px 15px;
+  }
+}
+.quality-frame {
+  margin: 5px;
+  border: 2px solid #715B4B;
+  h4 {
+    color: var(--text-accent);
+    text-align: center;
+    font-family: 'Tenor Sans';
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 72px;
+    padding: 90px 80px 30px;
+
+    @include mobile() {
+      font-size: 32px;
+      line-height: 38px;
+      padding: 45px 20px 15px;
+    }
+  }
+  p {
+    color: var(--text-black);
+    font-size: 24px;
+    line-height: 36px;
+    padding: 0px 50px;
+    text-align: center;
+
+    @include mobile() {
+      font-size: 18px;
+      line-height: 24px;
+      padding: 0px 15px; 
+    }
+  }
+}
+
+.quality-img img{
+  display: block;
+  margin-left: auto;
+  margin-right: 62px;
+  margin-bottom: 38px;
+
+  @include mobile() {
+    margin-right: 25px;
+    margin-bottom: 15px;
+    height: 100px;
+  }
+}

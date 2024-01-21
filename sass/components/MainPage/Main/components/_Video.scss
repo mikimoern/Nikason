@@ -1,0 +1,41 @@
+.video {
+  margin: 100px 140px 0px 140px;
+  h2 {
+    color: var(--text-accent);
+    font-family: 'Tenor Sans', sans-serif;
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 72px;
+    margin-bottom: 100px;
+
+    @include table() {
+      margin-bottom: 60px;
+    }
+
+    @include mobile() {
+      margin-bottom: 30px;
+      font-size: 32px;
+      line-height: 38px;
+    }
+  }
+
+  @include table() {
+    margin: 80px 100px 0px;
+  }
+
+  @include mobile() {
+    margin: 50px 15px 0px;
+  }
+}
+
+.video__about-us {
+  iframe {
+    @include table() {
+      height: 350px;
+    }
+
+    @include  mobile() {
+      height: 300px;
+    }
+  }
+}

@@ -1,0 +1,67 @@
+.brand {
+  margin: 100px 135px 0px;
+  h2 {
+    color: var(--text-accent);
+    font-family: 'Tenor Sans', sans-serif;
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 58px;
+    text-transform: uppercase;
+
+    @include mobile() {
+      font-size: 32px;
+      line-height: 38px;
+    }
+    span {
+      color: var(--text-accent);
+      font-family: 'Tenor Sans', sans-serif;
+      font-size: 48px;
+      font-weight: 400;
+      line-height: 58px;
+      text-transform: lowercase;
+
+      @include mobile() {
+        font-size: 32px;
+        line-height: 38px;
+      }
+    }
+  }
+
+  @include table() {
+    margin: 80px 100px 0px;
+  }
+
+  @include mobile() {
+    margin: 50px 15px 0px;
+  }
+}
+
+.brand-text {
+  display: grid;
+  grid-template-columns: repeat(3, 33%);
+  justify-content: center;
+  gap: 40px;
+  margin-top: 100px;
+
+  @include table() {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 60px;
+  }
+
+  @include mobile() {
+    margin-top: 25px;
+    gap: 20px;
+  }
+}
+
+.brand-text__list {
+  border-bottom: 3px solid var(--line-brown);
+  padding-bottom: 14px;
+  p {
+    line-height: 27px;
+    padding: 0px 40px;
+    text-align: center;
+  }
+}

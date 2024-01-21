@@ -1,0 +1,104 @@
+.bg-content {
+  display: grid;
+  grid-template-columns: repeat(2, 50%);
+  border-bottom: 1px solid var(--line-black);
+
+  @include table() {
+    grid-template-columns: 1fr;
+    grid-template-rows: 450px auto;
+  }
+
+  @include mobile() {
+    grid-template-columns: 100%;
+    grid-template-rows: 300px auto;
+  }
+}
+
+.bg-content__img {
+  width: 100%;
+
+  img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+.bg-content__text {
+  margin: 200px 40px 20px;
+  h3 {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 300;
+
+    @include mobile() {
+      font-size: 14px;
+      line-height: 22px;
+    }
+  }
+  h1 {
+    font-family: 'Tenor Sans';
+    color: var(--text-accent);
+    font-size: 48px;
+    line-height: 58px;
+    font-weight: 400;
+    padding: 20px 0px 40px;
+
+    @include mobile() {
+      font-size: 32px;
+      line-height: 38px;
+      padding: 20px 0px;
+    }
+  }
+  p {
+    font-size: 16px;
+
+    @include mobile() {
+      font-size: 14px;
+      line-height: 22px;
+    }
+  }
+
+  @include table() {
+    margin: 60px 40px 40px;
+  }
+
+  @include mobile() {
+    margin: 30px 15px 15px;
+  }
+}
+
+.bg-content__text-btn {
+  display: inline-block;
+  margin: 70px 0px;
+  padding: 18px 58px;
+  background-color: var(--green);
+  transition: all 1s;
+  a {
+    color: var(--text-white);
+    
+  }
+  &:hover {
+    background-color: var(--bg-hover);
+    cursor: pointer;
+  }
+
+  @include mobile() {
+    margin: 30px 0px;
+  }
+}
+
+.bg-content__text-social {
+  display: flex;
+  justify-content: flex-end;
+  gap: 40px;
+  a {
+    transition: hover 2s ease;
+    img {
+      &:hover {
+        transform: scale(1.2);
+      }
+    }
+  }
+}

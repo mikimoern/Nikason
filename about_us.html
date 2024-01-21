@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./css/index.min.css" />
+  <title>Nikason</title>
+</head>
+
+<body>
+  <header class="header">
+    <div class="container">
+      <nav class="nav">
+        <ul class="nav-list">
+          <li class="nav-list__item">
+            <a href="./master_classes.html" class="nav-list__link">Мастер-классы</a>
+          </li>
+          <li class="nav-list__item">
+            <a href="./furniture.html" class="nav-list__link">Мебель на заказ</a>
+          </li>
+        </ul>
+        <a class="logo" href="./index.html">
+          <img src="assets/icons/logo.png" alt="logo">
+        </a>
+        <ul class="nav-list">
+          <li class="nav-list__item">
+            <a href="#kontakt" class="nav-list__link">Контакты</a>
+          </li>
+          <li class="nav-list__item">
+            <a href="./about_us.html" class="nav-list__link">О нас</a>
+          </li>
+        </ul>
+        <button id="open-mobile-nav-btn" class="nav__btn"><img src="./assets/icons/icons-menu.svg"
+            alt="Open nav"></button>
+      </nav>
+    </div>
+
+    <div id="mobile-nav" class="mob-nav__wrap">
+      <div class="mob-nav__top">
+        <h4><a href="./index.html">Nikason</a></h4>
+        <button id="close-mobile-nav-btn" class="mob-nav__btn"><img src="./assets/icons/icon-close.svg"
+            alt="close nav"></button>
+      </div>
+      <ul class="mob-nav__list">
+        <li class="mob-nav__list-item">
+          <a href="./master_classes.html" class="mob-nav__list-link">Мастер-классы</a>
+        </li>
+        <li class="mob-nav__list-item">
+          <a href="./furniture.html" class="mob-nav__list-link">Мебель на заказ</a>
+        </li>
+      </ul>
+      <ul class="mob-nav__list">
+        <li class="mob-nav__list-item">
+          <a href="#kontakt" class="mob-nav__list-link" id="ContactLinks">Контакты</a>
+        </li>
+        <li class="mob-nav__list-item">
+          <a href="./about_us.html" class="mob-nav__list-link">О нас</a>
+        </li>
+      </ul>
+    </div>
+
+  </header>
+  <main class="main">
+    <div class="container">
+      <section class="history">
+        <h4>История создания мастерской</h4>
+        <h2>Nikason Brand</h2>
+        <div class="history__img">
+          <img src="./assets/images/history.jpg" alt="our_team">
+        </div>
+        <ul class="history__achievements">
+          <li class="history__achievements-items">
+            <ul class="history__achievements-items-nav">
+              <li>+10 лет</li>
+              <li>На рынке по производству мебели</li>
+            </ul>
+          </li>
+          <li class="history__achievements-items">
+            <ul class="history__achievements-items-nav">
+              <li>+1500</li>
+              <li>Изготовлено мебели</li>
+            </ul>
+          </li>
+          <li class="history__achievements-items">
+            <ul class="history__achievements-items-nav">
+              <li>120 лет</li>
+              <li>Самой старинной мебели для реставрации</li>
+            </ul>
+          </li>
+        </ul>
+      </section>
+      <section class="founder">
+        <div class="founder-image">
+          <img src="./assets/images/nikita.jpg" alt="avatar">
+        </div>
+        <div class="founder-biography">
+          <h4>Никита Колодезников-Матчитов</h4>
+          <h6>Основатель мастерской</h6>
+          <p>С детства я был окружен творческими людьми, мой дедушка был строителем и мастером по дереву. Спустя много лет и мне
+          передалась его любовь к дереву - в свободное время мастерил для себя небольшие изделия из древесины.</p>
+          <p>Более десяти лет назад построил двухэтажный гараж, на втором этаже расположилась наша мастерская. Начинал производство
+          практически “с нуля”, с каждой зарплаты понемногу откладывал на покупку инстурментов и станков.</p>
+          <p>Постепенно начали появляться первые заказы. Несколько лет назад мы с супругой решили еще заняться ремонтом и
+          реставрацией мебели. Эту идею предложили сами клиенты, поскольку периодически приходили с таким запросом. В основном,
+          реставрацией занимается супруга Саргылана. Мы с ней одна сплоченная, дружная и отличная команда.</p>
+        </div>
+      </section>
+      <section class="philosophy">
+        <h2>Философия мастерской <span>nikason</span></h2>
+        <p>Создавать что-то по-настоящему ценное и уникальное. Дарить радость и уют в каждый дом</p>
+      </section>
+      <section class="feedback">
+        <h2>Оставьте заявку и мы с вами свяжемся</h2>
+        <form id="feedbackForm" class="feedback_form">
+          <div class="form_input">
+            <input type="text" id="name" name="name" placeholder="Имя" required>
+          </div>
+          <div class="form_input">
+            <input 
+              type="tel" 
+              id="phone" 
+              name="phone" 
+              placeholder="Телефон" 
+              minlength="9"
+              maxlength="14" 
+              >
+          </div>
+          <div class="form_input">
+            <input type="email" id="email" name="email" placeholder="Email" required>
+          </div>
+          <div class="form_input form_input-message">
+            <textarea id="message" name="message" placeholder="Сообщение" ></textarea>
+          </div>
+          <button type="submit" class="form_btn">Оставить заявку</button>
+        </form>
+      </section>
+    </div>
+  </main>
+  <footer class="footer" id="kontakt">
+    <div class="container">
+      <div class="footer-wrap">
+        <div class="footer-nav">
+          <ul class="footer-nav__list">
+            <li>ИП Колодезников-Матчитов Н.И.</li>
+            <li>ИНН 143515646663</li>
+          </ul>
+          <ul class="footer-nav__list">
+            <li><a href="#!">Мастер-классы</a></li>
+            <li><a href="./furniture.html">Мебель на заказ</a></li>
+          </ul>
+          <ul class="footer-nav__list">
+            <li><a href="./index.html">Главная</a></li>
+            <li><a href="./about_us.html">О нас</a></li>
+          </ul>
+          <ul class="footer-nav__list">
+            <li>Якутия, ул. С. Каримовой 103</li>
+            <li>+7 967 927-22-27</li>
+          </ul>
+        </div>
+        <ul class="footer-img">
+          <li><a href="#!"><img src="./assets/icons/ft_teleg.svg" alt=""></a></li>
+          <li><a href="#!"><img src="./assets/icons/ft_insta.svg" alt=""></a></li>
+          <li><a href="#!"><img src="./assets/icons/ft_phone.svg" alt=""></a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+  <script src="./js/main.js"></script>
+</body>
+
+</html>

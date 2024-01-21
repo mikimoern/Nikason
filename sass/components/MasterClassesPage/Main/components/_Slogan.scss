@@ -1,0 +1,30 @@
+.slogan {
+  max-width: 100%;
+  height: 600px;
+  background-image: url("./../assets/images/bg-slogan.jpg");
+  background-position: top;
+  background-repeat: no-repeat;
+  object-fit: cover;
+
+  p {
+    padding: 180px 150px;
+    text-align: center;
+    color: var(--text-white);
+    font-family: "Tenor Sans";
+    font-size: 48px;
+    font-weight: 400;
+
+    @include table_max() {
+      padding: 180px 0;
+    }
+
+    @include mobile() {
+      font-size: 32px;
+      padding: 120px 0;
+    }
+  }
+
+  @include mobile() {
+    height: 400px;
+  }
+}

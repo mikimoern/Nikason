@@ -1,0 +1,38 @@
+:root {
+    --text-color: #323232;
+    --text-accent: #57463A;
+    --text-white: #F6F6F6;
+    --text-black: #000000;
+
+    --green: #A1B29F;
+    --line-black: #000;
+    --line-brown: #715B4B;
+
+    --nav-hover: #57463a;
+
+    --bg-color: #F3EFEA;
+    --bg-white: #F6F6F6;
+    --bg-hover: #5f7e5c;
+    --bg-brand: #EBEEEB;
+    --bg-furniture: #E3DACE;
+    --bg-masterClass: #D4CDC3;
+    --bg-footer: #715B4B;
+}
+
+@mixin table_max() {
+  @media (max-width: 1024px) {
+    @content;
+  }
+}
+
+@mixin table() {
+  @media (max-width: 950px) {
+    @content;
+  }
+}
+
+@mixin mobile() {
+  @media (max-width: 650px) {
+    @content;
+  }
+}
